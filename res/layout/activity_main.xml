@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:background="#000000"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="#AAAAAA"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvAX"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="X: Off" />
+
+                <TextView
+                    android:id="@+id/tvAY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Y: Off" />
+
+                <TextView
+                    android:id="@+id/tvAZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Z: Off" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#AAAAAA"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvGX"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="X: Off" />
+
+                <TextView
+                    android:id="@+id/tvGY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Y: Off" />
+
+                <TextView
+                    android:id="@+id/tvGZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Z: Off" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#555555"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.85"
+                android:layout_marginLeft="4dip"
+                android:text="ACCELEROMETER"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <view
+                class="com.kkb.imugraph.GraphView"
+                android:id="@+id/graphView1"
+                android:background="#FFFFFF"
+                android:layout_margin="4dip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.85"
+                android:layout_marginLeft="4dip"
+                android:text="GYROSCOPE"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <view
+                class="com.kkb.imugraph.GraphView"
+                android:id="@+id/graphView2"
+                android:background="#FFFFFF"
+                android:layout_margin="4dip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
